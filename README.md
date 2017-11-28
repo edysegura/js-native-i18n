@@ -1,2 +1,12 @@
-# js-native-i18n
+# JavaScript Native i18n API
+
 Using native i18n in JavaScript
+
+## Demo
+
+![Live Demo](i18n.gif)
+
+## References
+
+* [Number.prototype.toLocaleString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString)
+* [Date.prototype.toLocaleString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
