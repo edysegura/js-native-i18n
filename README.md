@@ -1,6 +1,6 @@
 # JavaScript Native i18n API
 
-Using native i18n in JavaScript
+Using the method toLocaleString() to do native i18n in JavaScript
 
 ## Demo
 
