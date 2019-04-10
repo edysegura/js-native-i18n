@@ -17,11 +17,11 @@ function getCurrency(locale) {
 }
 
 function setLocale(locale) {
-  currency.innerHTML = inputNumber.toLocaleString(locale, {
+  currency.textContent = inputNumber.toLocaleString(locale, {
     style: 'currency',
     currency: getCurrency(locale)
   })
-  date.innerHTML = inputDate.toLocaleString(locale)
+  date.textContent = inputDate.toLocaleString(locale)
 }
 
 setLocale(locale.value)
