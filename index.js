@@ -7,7 +7,7 @@ const date = document.getElementById('date')
 const inputNumber = 1234.56
 const inputDate = new Date()
 
-function getCurrency(locale) {
+function getCurrencyByLocale(locale) {
   return {
     'en-US': 'USD',
     'pt-BR': 'BRL',
@@ -17,12 +17,13 @@ function getCurrency(locale) {
 }
 
 function setLocale(locale) {
-  currency.textContent = inputNumber.toLocaleString(locale, {
+  const currencyParams = {
     style: 'currency',
-    currency: getCurrency(locale)
-  })
+    currency: getCurrencyByLocale(locale)
+  }
+  currency.textContent = inputNumber.toLocaleString(locale, currencyParams)
   date.textContent = inputDate.toLocaleString(locale)
 }
 
 setLocale(locale.value)
-locale.addEventListener('change', e => setLocale(e.target.value))
+locale.addEventListener('change', event => setLocale(event.target.value))
