@@ -16,7 +16,7 @@ function getCurrencyByLocale(locale) {
   }[ locale ]
 }
 
-function setLocale(locale) {
+function applyLocale(locale) {
   const currencyParams = {
     style: 'currency',
     currency: getCurrencyByLocale(locale)
@@ -25,5 +25,5 @@ function setLocale(locale) {
   date.textContent = inputDate.toLocaleString(locale)
 }
 
-setLocale(locale.value)
-locale.addEventListener('change', event => setLocale(event.target.value))
+applyLocale(locale.value)
+locale.addEventListener('change', event => applyLocale(event.target.value))
